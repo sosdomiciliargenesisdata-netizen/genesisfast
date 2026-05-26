@@ -1,0 +1,73 @@
+========================================================
+  SOS RECIBOS  —  Como gerar o APK (passo a passo)
+========================================================
+
+Este projeto transforma o "Gerador de Recibo" em um aplicativo
+Android (.apk) que funciona 100% OFFLINE. Tudo o que for salvo
+fica guardado no próprio celular.
+
+Você NÃO precisa instalar nada no seu computador. A compilação
+do APK é feita de graça pelo GitHub, na nuvem.
+
+--------------------------------------------------------
+PASSO 1 — Criar uma conta no GitHub (se ainda não tiver)
+--------------------------------------------------------
+  - Acesse  https://github.com  e crie uma conta gratuita.
+
+--------------------------------------------------------
+PASSO 2 — Criar um repositório
+--------------------------------------------------------
+  - Clique no botão "+" (canto superior direito) > "New repository".
+  - Dê um nome, por exemplo:  recibo-app
+  - Marque a opção "Public" (ou "Private", tanto faz).
+  - Clique em "Create repository".
+
+--------------------------------------------------------
+PASSO 3 — Enviar os arquivos do projeto
+--------------------------------------------------------
+  - Descompacte o arquivo recibo-app.zip no seu computador.
+  - ATENÇÃO: você deve enviar o CONTEÚDO de dentro da pasta
+    recibo-app, e NÃO a pasta em si.
+  - Abra a pasta recibo-app, selecione TUDO que estiver dentro
+    dela (as pastas "app", ".github" e os arquivos build.gradle,
+    settings.gradle, etc.).
+  - Na página do repositório, clique em "Add file" > "Upload files"
+    e arraste esses itens selecionados para a área de upload.
+  - O arquivo settings.gradle precisa ficar na RAIZ do repositório
+    (a primeira tela do repositório), não dentro de uma subpasta.
+  - Clique em "Commit changes".
+
+--------------------------------------------------------
+PASSO 4 — Aguardar o APK ser gerado
+--------------------------------------------------------
+  - Assim que os arquivos forem enviados, o GitHub começa a
+    compilar o APK automaticamente.
+  - Clique na aba "Actions" do repositório.
+  - Aguarde a tarefa "Gerar APK" terminar (uma marca verde de OK).
+    Costuma levar de 2 a 5 minutos.
+
+--------------------------------------------------------
+PASSO 5 — Baixar o APK
+--------------------------------------------------------
+  - Clique na tarefa que terminou.
+  - Na seção "Artifacts", baixe o arquivo "SOS-Recibos-APK".
+  - Descompacte: dentro dele está o arquivo  app-debug.apk
+
+--------------------------------------------------------
+PASSO 6 — Instalar no celular
+--------------------------------------------------------
+  - Envie o app-debug.apk para o celular do parceiro.
+  - Ao abrir o arquivo, o Android vai pedir permissão para
+    "instalar de fonte desconhecida" — basta autorizar.
+  - Pronto: o app "SOS Recibos" aparece na tela do celular.
+
+========================================================
+OBSERVAÇÕES
+========================================================
+- O app funciona totalmente offline. Os recibos e os parceiros
+  cadastrados ficam salvos no próprio aparelho.
+- A busca automática de CNPJ só funciona quando o celular
+  estiver com internet. Sem internet, basta preencher os
+  campos manualmente — normal.
+- Para enviar o recibo pelo WhatsApp, o app gera o PDF e abre
+  a tela de compartilhamento do Android; é só escolher WhatsApp.
